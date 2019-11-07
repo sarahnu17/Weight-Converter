@@ -20,9 +20,10 @@
         <div class="row">
             <div class="col-md-6 offset-md-3">
                 <h1 class="display-4 text-center mb-3">Weight Converter</h1>
-                <form class="form-inline">
+                <h6 class="text-center mb-3 bg-primary">First select the desired unit and then enter in the number below</h6>
+                <form id = "unitForm" class="form-inline">
                     <div class="mb-3">
-                        <!--Only can enter pounds-->
+                        <!--Enter the desired unit here-->
                         <input id="unitInput" 
                         type="number" 
                         class="form-control form-control-lg" 
@@ -38,32 +39,25 @@
                     </div>
                 </form>
 
-                <div>
-                    <div id="output1" class="card bg-primary mb-2">
+                <div id="output">
+                    <div class="card bg-info mb-2">
                         <div class="card-body">
-                            <h4>Grams:</h4>
-                            <div id="gramsOutput"></div>
+                            <h4 id="text-output1"></h4>
+                            <div id="output1"></div>
                         </div>
                     </div>
 
-                    <div id="output2" class="card bg-success mb-2">
+                    <div class="card bg-success mb-2">
                         <div class="card-body">
-                            <h4>Kilograms:</h4>
-                            <div id="kgOutput"></div>
+                            <h4 id="text-output2"></h4>
+                            <div id="output2"></div>
                         </div>
                     </div>
 
-                    <div id="output3" class="card bg-danger mb-2">
+                    <div class="card bg-danger mb-2">
                         <div class="card-body">
-                            <h4>Ounces:</h4>
-                            <div id="ozOutput"></div>
-                        </div>
-                    </div>
-
-                    <div id="output4" class="card bg-info mb-2">
-                        <div class="card-body">
-                            <h4>Pounds:</h4>
-                            <div id="lbOutput"></div>
+                            <h4 id="text-output3"></h4>
+                            <div id="output3"></div>
                         </div>
                     </div>
                 </div>
